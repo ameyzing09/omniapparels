@@ -171,5 +171,9 @@ input[type=submit]:hover{
         width: 100%;
         margin: 0;
     }
+
+    .collar-img{
+        width: 25%;
+    }
 }
 
