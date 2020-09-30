@@ -58,56 +58,6 @@ nav{
     color: whitesmoke;
 }
 
-/* Navbar animation */
-
-@media screen and (max-width: 500px){
-    .clothing-div{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
-
-    .product-image-left, .product-image-right{
-        width: 75%;
-        margin: 0;
-    }
-
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* .nav-links{
-        font-size: 12px;
-    } */
-
-    .logo{
-        display: flex;
-        justify-content: center;
-    }
-
-    .navi-list{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        list-style: none;
-    }
-
-    input[type=submit]{
-        margin: 10px;
-    }
-    .collar-img{
-        display: none;
-    }
-    .mask-image{
-        /* margin-bottom: 30px; */
-        /* padding: 30px; */
-        width: 300px;
-        height: 300px;
-    }
-}
-
-
 input[type=text], input[type=email], input[type=number], select{
     width: 100%;
     padding: 10px;
@@ -163,7 +113,7 @@ input[type=submit]:hover{
     clear: both;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .form-col, .form-col2, input[type=submit]{
         width: 100%;
         margin-top: 0;
@@ -177,7 +127,7 @@ input[type=submit]:hover{
     width: 300px;
     height: 300px;
 }
-
+/* 
 .middle-container{
     margin: 50px 0;
     color: whitesmoke;
@@ -209,10 +159,99 @@ input[type=submit]:hover{
     float: right;
     margin: 0 0 0 30px;
     clear: both;
+} */
+
+.clothing-div-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: whitesmoke;
 }
 
-@media screen and (max-width:500px){
+.clothing-div-right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    color: whitesmoke;
 }
 
+.clothing-info-div ul{
+    list-style: none;
+}
 
+.product-image{
+    width: 300px;
+}
 
+.clothing-info-div{
+    padding: 20px;
+}
+
+.clothing-info-div ol{
+    padding: 20px;
+}
+
+.extra-margin{  
+    margin: 0 100px;
+}
+
+.collar-div{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:600px){
+    .clothing-div-left{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .clothing-div-right{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .product-image{
+        margin: auto;
+        width: 300px;
+    }
+}
+
+/* Navbar animation */
+
+@media screen and (max-width: 600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .nav-links{
+        font-size: 12px;
+    } */
+
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navi-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+
+    input[type=submit]{
+        margin: 10px auto;
+    }
+    /* .collar-img{
+        display: none;
+    } */
+    .mask-image{
+        /* margin-bottom: 30px; */
+        /* padding: 30px; */
+        width: 300px;
+        height: 300px;
+    }
+}
